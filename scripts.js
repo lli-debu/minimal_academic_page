@@ -124,10 +124,17 @@ function createPublicationElement(publication) {
   const venueContainer = document.createElement('div');
   venueContainer.className = 'pub-venue-container';
   
+  // const venue = document.createElement('div');
+  // venue.className = 'pub-venue';
+  // venue.textContent = publication.venue;
+  // venueContainer.appendChild(venue);
+
+  // lli: make bold works in the venue
   const venue = document.createElement('div');
   venue.className = 'pub-venue';
-  venue.textContent = publication.venue;
+  venue.innerHTML = publication.venue; // <-- interpret tags
   venueContainer.appendChild(venue);
+
   
   // Add award if it exists
   if (publication.award && publication.award.length > 0) {
@@ -162,6 +169,13 @@ function createPublicationElement(publication) {
       const projectLink = document.createElement('a');
       projectLink.href = publication.links.project;
       projectLink.textContent = '[Project Page]';
+      links.appendChild(projectLink);
+    }
+
+    if (publication.links.link) {
+      const projectLink = document.createElement('a');
+      projectLink.href = publication.links.project;
+      projectLink.textContent = '[Link]';
       links.appendChild(projectLink);
     }
     

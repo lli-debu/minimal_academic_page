@@ -6,6 +6,7 @@
     <meta name="description" content="Academic Homepage">
     <meta name="keywords" content="Computer Science, PhD Student, Research, Machine Learning, Robotics">
     <meta name="author" content="Anonymous">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
     <meta property="og:title" content="Academic Homepage - PhD Student">
     <meta property="og:description" content="Research in computer science and related fields.">
     <meta property="og:type" content="website">
@@ -14,18 +15,20 @@
     <meta name="twitter:creator" content="@anonymous">
     <title>Academic Homepage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
     <header>
         <div class="header-content">
-            <h1>Linhan Li</h1>
+            <h1>Linhan Li (李林瀚)</h1>
             <p>CS PhD Student • George Mason University</p>
             <div class="social-links-header">
-                <a href="#"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-                <a href="#"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://scholar.google.com/citations?user=57X4Xb8AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
+                <a href="https://orcid.org/0009-0008-2533-9648"><i class="fa-brands fa-orcid"></i>ORCID</a>
+                <a href="https://github.com/lli-debu"><i class="fab fa-github"></i>GitHub</a>
                 <a href="mailto:lli34@gmu.edu"><i class="fas fa-envelope"></i>Email</a>
             </div>
         </div>
@@ -37,11 +40,13 @@
     <main>
         <section id="about">
             <p>Hi! I am a PhD student in Computer Science at George Mason University, advised by <a href="https://github.com/nguyenthanhvuh/">Dr. ThanhVu Nguyen</a> at <a href="https://roars.dev/">ROARS lab</a>.</p>
+            <p>I obtained my B.S. degree in Computer Science from University of Nebraska - Lincoln with a minor in Mathematics. I worked with Dr. ThanhVu Nguyen during my senior year at UNL, and continue to work with him as a PhD student at GMU.</p>
+            <p>In my free time, I like to do tinkering, play video games, and (occasionally) hike or cycle. </p>
         </section>
 
         <section id="research">
             <h2>Research</h2>
-            <p>My current research focuses on <strong>DNN verification</strong> and <strong>input generation</strong>. <strong> Formal methods</strong> and <strong>Program analysis/testing</strong> also fall into my field of interest.</p>
+            <p>My current research focuses on <strong>Input generation</strong> related to <strong>DNN verification</strong>. <strong> Formal methods</strong> and <strong>Program analysis/testing</strong> also fall into my field of interest.</p>
             <!-- <ul>
                 <li>[Research Topic 1] (<a href="#">[Conference 1]'24</a>, <a href="#">[Conference 2]'23</a>, <a href="#">[Conference 3]'22</a>)</li>
                 <li>[Research Topic 2] (<a href="#">[Conference 4]'24</a>, <a href="#">[Conference 5]'23</a>, <a href="#">[Conference 6]'23</a>)</li>
@@ -54,16 +59,8 @@
             <h2>News</h2>
             <div class="news-container">
                 <ul class="news-list">
-                    <li>[MM/YYYY]: [News Item 1]</li>
-                    <li>[MM/YYYY]: [News Item 2]</li>
-                    <li>[MM/YYYY]: [News Item 3]</li>
-                    <li>[MM/YYYY]: [News Item 4]</li>
-                    <li>[MM/YYYY]: [News Item 5]</li>
-                    <li>[MM/YYYY]: [News Item 6]</li>
-                    <li>[MM/YYYY]: [News Item 7]</li>
-                    <li>[MM/YYYY]: [News Item 8]</li>
-                    <li>[MM/YYYY]: [News Item 9]</li>
-                    <li>[MM/YYYY]: [News Item 10]</li>
+                    <li>8/2025: ASE'25 research paper on generating challenging benchmarks for DNN verification</li>
+                    <li>4/2025: ISSTA'25 TOOL papers on LSP support for the COOL language </li>
                 </ul>
             </div>
         </section>
@@ -86,19 +83,19 @@
             </div>
             <div class="award-item">
                 <span class="award-year">2023</span>
-                <div class="award-desc">VNN-COMP 2023 New Participant Award and winner of tllverifybench (Special thanks to <a href="https://hocdot.github.io/">Hai</a>!)</div>
+                <div class="award-desc">Our team got the New participant award and ranked 4th overall at VNN-COMP 2023 (Special thanks to <a href="https://hocdot.github.io/">Hai</a>!)</div>
             </div>
             <div class="award-item">
                 <span class="award-year">2021</span>
                 <div class="award-desc">Undergraduate Creative Activities and Research Experience (UCARE) Award @UNL</div>
             </div>
             <div class="award-item">
-                <span class="award-year">1234</span>
-                <div class="award-desc">Global whatever scholorship @UNL</div>
+                <span class="award-year">2019</span>
+                <div class="award-desc">Global Delegate Scholarship @UNL</div>
             </div>
         </section>
 
-        <section id="services">
+        <!-- <section id="services">
             <h2>Services</h2>
             <div class="service-category">
                 <div class="service-title">Reviewer</div>
@@ -107,24 +104,25 @@
 
             <div class="service-category">
                 <div class="service-title">Graduate Teaching Assistant</div>
-                <p>CS 440/540: Compiler Construction, SWE 619: Obj Orient Sftware Specif/Cons, CS 690: AI Safety & Assurance</p>
+                <p>CS 440/540: Compiler Construction</p>
+                <p>SWE 619: Obj Orient Sftware Specif/Cons</p>
+                <p>CS 690: AI Safety & Assurance</p>
             </div>
-            <div class="service-category">
-                <div class="service-title">Volunteer</div>
-                <p>[Role 1], [Role 2], [Role 3]</p>
-            </div>
-        </section>
+        </section> -->
+
 
         <section id="miscellaneous">
             <h2>Miscellaneous</h2>
             <div class="misc-item">
-                <p>[Optional] Share your hobbies and interests here.</p>
+                <p></p>You found my <a href="https://space.bilibili.com/3226098"><i class="fa-brands fa-bilibili"></i>Bilibili</a> account! </p>
+                <p>Funder of ROARS fudbank (accepting donations).</p>
+                <p>Big fan of DotA2.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Last updated: [Month YYYY]. Design and source code from <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang's website</a>.</p>
+        <p>Last updated: Sept. 2025. Design and source code from <a href="https://cs.stanford.edu/~yuhuiz/">Yuhui Zhang's website</a>.</p>
     </footer>
 
     <div id="imageModal" class="modal">

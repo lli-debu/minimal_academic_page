@@ -158,6 +158,13 @@ function createPublicationElement(publication) {
       links.appendChild(pdfLink);
     }
     
+    if (publication.links.link) {
+      const projectLink = document.createElement('a');
+      projectLink.href = publication.links.link;
+      projectLink.textContent = '[Link]';
+      links.appendChild(projectLink);
+    }
+
     if (publication.links.code) {
       const codeLink = document.createElement('a');
       codeLink.href = publication.links.code;
@@ -169,13 +176,6 @@ function createPublicationElement(publication) {
       const projectLink = document.createElement('a');
       projectLink.href = publication.links.project;
       projectLink.textContent = '[Project Page]';
-      links.appendChild(projectLink);
-    }
-
-    if (publication.links.link) {
-      const projectLink = document.createElement('a');
-      projectLink.href = publication.links.project;
-      projectLink.textContent = '[Link]';
       links.appendChild(projectLink);
     }
     

@@ -11,9 +11,8 @@
       "selected": 1,
       "award": "",
       "links": {
-        "pdf": "#",
         "code": "https://github.com/dynaroars/relusplitter",
-        "project": "#"
+        "link": "#"
       }
     },
     {
@@ -22,7 +21,7 @@
         "Linhan Li",
         "ThanhVu Nguyen"
       ],
-      "venue": "International Symposium on Software Testing and Analysis (ISSTA) Tool Demo, 2025",
+      "venue": "International Symposium on Software Testing and Analysis (<b>ISSTA</b>) Tool Demo, 2025",
       "thumbnail": "images/thumbs/2.jpg",
       "selected": 1,
       "award": "",
